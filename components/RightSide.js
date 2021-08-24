@@ -8,7 +8,7 @@ import ItemListSkeleton from './ItemListSkeleton';
 const RightSide = ({ pageName }) => {
   const router = useRouter();
   const { data, error } = useSWR(
-    `http://localhost:3000/api/${pageName}/${router.query.username}`,
+    `https://halamanpersonal.vercel.app/api/${pageName}/${router.query.username}`,
     fetcher
   );
   return (

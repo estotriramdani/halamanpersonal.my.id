@@ -6,7 +6,7 @@ import { fetcher } from '../configs/fetcher';
 
 function DetailItem({ pageName }) {
   const router = useRouter();
-  const url = `http://localhost:3000/api/${pageName}/${router.query.username}/${router.query.slug}`;
+  const url = `https://halamanpersonal.vercel.app/api/${pageName}/${router.query.username}/${router.query.slug}`;
   const { data, error } = useSWR(url, fetcher);
   return (
     <div className="transition-all duration-300 detail-item">
