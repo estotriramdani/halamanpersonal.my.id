@@ -1,18 +1,18 @@
 import { useRouter } from 'next/dist/client/router';
+import React from 'react';
 import LeftSide from '../../../components/LeftSide';
 import RightSide from '../../../components/RightSide';
+
 import ShowCaseLayout from '../../../components/Layouts/ShowCaseLayout';
 
-export default function Home() {
+function Educations() {
   const router = useRouter();
   return (
-    <ShowCaseLayout title="Experiences">
-      <LeftSide
-        headingTitle="Experiences"
-        pageName={'experiences'}
-        isDetail={true}
-      />
-      <RightSide pageName="experiences" username={router.query.username} />
+    <ShowCaseLayout title="Educations">
+      <LeftSide headingTitle="Educations" />
+      <RightSide pageName="educations" username={router.query.username} />
     </ShowCaseLayout>
   );
 }
+
+export default Educations;

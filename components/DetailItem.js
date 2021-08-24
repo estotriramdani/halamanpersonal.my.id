@@ -8,9 +8,8 @@ function DetailItem({ pageName }) {
   const router = useRouter();
   const url = `http://localhost:3000/api/${pageName}/${router.query.username}/${router.query.slug}`;
   const { data, error } = useSWR(url, fetcher);
-  if (data) console.log(data);
   return (
-    <div>
+    <div className="transition-all duration-300 detail-item">
       {data ? (
         <div>
           <img
@@ -18,7 +17,7 @@ function DetailItem({ pageName }) {
             alt={data.data.title}
             className="rounded-md shadow-lg ring-3 ring-green-600 lazyload"
           />
-          <div className="px-8 py-6 mt-4 font-mono bg-white dark:bg-gray-700 dark:text-gray-100 rounded-xl shadow-lg">
+          <div className="px-8 py-6 mt-4 font-mono bg-white dark:bg-gray-800 dark:text-gray-100 text-dark-800 rounded-xl shadow-lg">
             <h2 className="text-4xl font-bold mb-3">{data.data.title}</h2>
             <h3 className="text-xl mb-4 font-semibold">{data.data.subtitle}</h3>
             <div

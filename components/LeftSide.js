@@ -4,7 +4,7 @@ import HeadingDetail from './HeadingDetail';
 
 const LeftSide = ({ headingTitle, pageName, isDetail }) => {
   return (
-    <div className="sm:w-full lg:w-2/3">
+    <div className="sm:w-full lg:w-3/5">
       <div className="px-4 pb-4">
         <HeadingDetail headingTitle={headingTitle} />
         {isDetail ? (

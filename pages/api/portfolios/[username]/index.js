@@ -1,4 +1,5 @@
-import experiencesData from '../../../../data/experiencesData';
+import portfoliosData from '../../../../data/portfoliosData';
+
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 export const config = {
   api: {
@@ -7,5 +8,5 @@ export const config = {
 };
 
 export default function handler(req, res) {
-  res.status(200).json(experiencesData);
+  res.status(200).json(portfoliosData);
 }

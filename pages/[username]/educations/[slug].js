@@ -6,13 +6,13 @@ import ShowCaseLayout from '../../../components/Layouts/ShowCaseLayout';
 export default function Home() {
   const router = useRouter();
   return (
-    <ShowCaseLayout title="Experiences">
+    <ShowCaseLayout title="Educations">
       <LeftSide
-        headingTitle="Experiences"
+        headingTitle="Educations"
         pageName={'experiences'}
         isDetail={true}
       />
-      <RightSide pageName="experiences" username={router.query.username} />
+      <RightSide pageName="educations" username={router.query.username} />
     </ShowCaseLayout>
   );
 }

@@ -1,10 +1,10 @@
 import Head from 'next/head';
-import Navbar from '../components/Navbar';
+import Navbar from '../Navbar';
 
 export default function ShowCaseLayout({
   title,
   children,
-  metaDescription = 'Ini adalah meta description',
+  metaDescription = 'HalamanPersonal.my.id adalah aplikasi web untuk membuat halaman personal yang memuat informasi penting untuk personal branding.',
 }) {
   return (
     <>

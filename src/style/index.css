@@ -22,3 +22,6 @@
     overflow: visible !important;
   }
 }
+.detail-item a {
+  text-decoration: underline;
+}
