@@ -1,0 +1,24 @@
+::-webkit-scrollbar {
+  /* background: #f3f4f6; */
+  width: 10px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+.right-side {
+  max-height: 80vh;
+}
+
+@media (max-width: 768px) {
+  .right-side {
+    max-height: 100%;
+    overflow: visible !important;
+  }
+}
